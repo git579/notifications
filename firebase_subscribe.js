@@ -7,9 +7,7 @@ firebase.initializeApp({
 // браузер поддерживает уведомления
 // вообще, эту проверку должна делать библиотека Firebase, но она этого не делает
 if ('Notification' in window) {
-    console.log(222)
     var messaging = firebase.messaging();
-    console.log(firebase)
     // пользователь уже разрешил получение уведомлений
     // подписываем на уведомления если ещё не подписали
     if (Notification.permission === 'granted') {
@@ -18,6 +16,7 @@ if ('Notification' in window) {
 
     // по клику, запрашиваем у пользователя разрешение на уведомления
     // и подписываем его
+    console.log(222)
     $('#subscribe').on('click', function () {
         console.log(1)
         subscribe();
