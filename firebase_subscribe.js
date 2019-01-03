@@ -16,9 +16,7 @@ if ('Notification' in window) {
 
     // по клику, запрашиваем у пользователя разрешение на уведомления
     // и подписываем его
-    console.log(222)
     $('#subscribe').on('click', function () {
-        console.log(1)
         subscribe();
     });
 }
